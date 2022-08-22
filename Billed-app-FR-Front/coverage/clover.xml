@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660140745361" clover="3.2.0">
-  <project timestamp="1660140745361" name="All files">
-    <metrics statements="219" coveredstatements="185" conditionals="90" coveredconditionals="72" methods="69" coveredmethods="50" elements="378" coveredelements="307" complexity="0" loc="219" ncloc="219" packages="3" files="16" classes="16"/>
+<coverage generated="1661180513797" clover="3.2.0">
+  <project timestamp="1661180513797" name="All files">
+    <metrics statements="219" coveredstatements="190" conditionals="90" coveredconditionals="72" methods="69" coveredmethods="52" elements="378" coveredelements="314" complexity="0" loc="219" ncloc="219" packages="3" files="16" classes="16"/>
     <package name="constants">
       <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="routes.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\constants\routes.js">
         <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <line num="6" count="6" type="stmt"/>
         <line num="13" count="6" type="stmt"/>
-        <line num="14" count="39" type="cond" truecount="5" falsecount="0"/>
+        <line num="14" count="43" type="cond" truecount="5" falsecount="0"/>
         <line num="16" count="10" type="stmt"/>
         <line num="18" count="13" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
         <line num="22" count="12" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
       </file>
       <file name="usersTest.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\constants\usersTest.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="containers">
-      <metrics statements="183" coveredstatements="149" conditionals="55" coveredconditionals="37" methods="53" coveredmethods="34"/>
+      <metrics statements="183" coveredstatements="154" conditionals="55" coveredconditionals="37" methods="53" coveredmethods="36"/>
       <file name="Bills.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\containers\Bills.js">
         <metrics statements="24" coveredstatements="19" conditionals="6" coveredconditionals="4" methods="8" coveredmethods="6"/>
         <line num="7" count="7" type="stmt"/>
@@ -170,50 +170,50 @@
       </file>
       <file name="Logout.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\containers\Logout.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="5" count="26" type="stmt"/>
-        <line num="6" count="26" type="stmt"/>
-        <line num="7" count="26" type="stmt"/>
-        <line num="8" count="26" type="stmt"/>
-        <line num="11" count="26" type="stmt"/>
+        <line num="5" count="25" type="stmt"/>
+        <line num="6" count="25" type="stmt"/>
+        <line num="7" count="25" type="stmt"/>
+        <line num="8" count="25" type="stmt"/>
+        <line num="11" count="25" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
       </file>
       <file name="NewBill.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\containers\NewBill.js">
-        <metrics statements="38" coveredstatements="23" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="2"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="43" count="4" type="stmt"/>
+        <metrics statements="38" coveredstatements="28" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="4"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
-        <line num="65" count="4" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
         <line num="66" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="67" count="0" type="stmt"/>
         <line num="71" count="0" type="stmt"/>
@@ -262,19 +262,19 @@
       </file>
       <file name="LoginUI.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\views\LoginUI.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="17" type="stmt"/>
+        <line num="4" count="19" type="stmt"/>
       </file>
       <file name="NewBillUI.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\views\NewBillUI.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="7" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
       </file>
       <file name="VerticalLayout.js" path="C:\Users\Mathias\Documents\Openclassrooms\Github\Billed-app\Billed-app-FR-Front\src\views\VerticalLayout.js">
         <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="7" count="50" type="stmt"/>
-        <line num="8" count="50" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="38" type="stmt"/>
-        <line num="11" count="50" type="cond" truecount="4" falsecount="0"/>
-        <line num="12" count="22" type="stmt"/>
+        <line num="7" count="48" type="stmt"/>
+        <line num="8" count="48" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="34" type="stmt"/>
+        <line num="11" count="48" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="20" type="stmt"/>
         <line num="29" count="28" type="stmt"/>
       </file>
     </package>
