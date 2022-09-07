@@ -27,7 +27,7 @@ export default () => {
                   </div>
                   <div class="col-half">
                     <label for="expense-name" class="bold-label">Nom de la dépense</label>
-                    <input type="text" class="form-control blue-border" data-testid="expense-name" placeholder="Vol Paris Londres" />
+                    <input type="text" id="expense-name" name="expense-name" class="form-control blue-border" data-testid="expense-name" placeholder="Vol Paris Londres" />
                   </div>
                   <div class="col-half">
                     <label for="datepicker" class="bold-label">Date</label>
@@ -62,7 +62,7 @@ export default () => {
             <div class="row">
               <div class="col-md-6">
                 <div class="col-half">
-                  <button type="submit" id='btn-send-bill' class="btn btn-primary">Envoyer</button>
+                  <button type="submit" data-testid="envoyer-btn" id='btn-send-bill' class="btn btn-primary">Envoyer</button>
                 </div>
               </div>
             </div>
