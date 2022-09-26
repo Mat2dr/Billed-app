@@ -18,6 +18,7 @@ export default class NewBill {
   handleChangeFile = e => {
     e.preventDefault()
     const file = this.document.querySelector(`input[data-testid="file"]`).files[0]
+    const alertFile = this.document.querySelector(`.alertFile`)
     const filePath = e.target.value.split(/\\/g)
     const fileName = filePath[filePath.length-1]
     const formData = new FormData()
@@ -25,7 +26,12 @@ export default class NewBill {
     formData.append('file', file)
     formData.append('email', email)
 
-    this.store
+    //Only img can be used
+    if(file.type=="image/jpeg" || file.type=="image/jpg" || file.type=="image/png") {
+      //remove alert message
+      alertFile.innerHTML = "";
+      //Execute
+      this.store
       .bills()
       .create({
         data: formData,
@@ -34,11 +40,17 @@ export default class NewBill {
         }
       })
       .then(({fileUrl, key}) => {
-        //console.log(fileUrl)
         this.billId = key
         this.fileUrl = fileUrl
         this.fileName = fileName
       }).catch(error => console.error(error))
+    } else {
+      //If the file type isn't correct
+      //Set the value to null
+      e.target.value = null;
+      //Add error message
+      alertFile.innerHTML = "Veuillez ajouter un fichier sous le format: 'jpeg' ou 'jpg' ou 'png'.";
+    }
   }
   handleSubmit = e => {
     e.preventDefault()

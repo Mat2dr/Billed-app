@@ -37,6 +37,14 @@ label {
   color: #fff;
 }
 
+.alertFile {
+  margin-top: 5px;
+  color: red;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
 #btn-send-bill {
   width: 100px;
   background-color: #0E5AE5;

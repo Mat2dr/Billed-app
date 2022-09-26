@@ -160,7 +160,7 @@ describe("Given I am a user connected as Employee", () => {
       document.body.appendChild(root)
       Router()
     })
-    test("fetches bills from an API and fails with 404 message error", () => {
+    test("Fails with 404 message error", () => {
       store.bills.mockImplementationOnce(() => {
         return Promise.reject(new Error("Erreur 404"))
       })
@@ -169,7 +169,7 @@ describe("Given I am a user connected as Employee", () => {
       expect(message).toBeTruthy()
     })
 
-    test("fetches messages from an API and fails with 500 message error", () => {
+    test("Fails with 500 message error", () => {
 
       store.bills.mockImplementationOnce(() => {
         return Promise.reject(new Error("Erreur 500"))
