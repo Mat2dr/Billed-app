@@ -9,6 +9,7 @@ import { fireEvent,screen, waitFor } from "@testing-library/dom";
 import userEvent from '@testing-library/user-event';
 //Import storage module
 import store from "../__mocks__/store.js";
+import storePost from "../__mocks__/storePost.js";
 import {localStorageMock} from "../__mocks__/localStorage.js";
 //Import routes and router modules
 import Router from "../app/Router.js";
@@ -109,39 +110,32 @@ describe("Given I am connected as an employee", () => {
 // test d'intégration Post
 describe("Given I am a user connected as Employee", () => {
   describe("When I navigate to NewBillDash", () => {
-    test("POST", async () => {
-      //Set the test
-      document.body.innerHTML = NewBillUI();
-      const onNavigate = (pathname) => {
-        document.body.innerHTML = ROUTES({ pathname });
+    test('Add bill to test POST method', async () => {
+      const addPostBill = {
+          id: '120',
+          status: 'refused',
+          pct: 12,
+          amount: 200,
+          email: 'dragovic.mathias@gmail.com',
+          name: 'Le remois',
+          vat: '60',
+          fileName: 'test.jpg',
+          date: '2022-09-20',
+          commentAdmin: 'à valider',
+          commentary: 'Un commentaire',
+          type: 'Restaurants et bars',
+          fileUrl: 'https://testing-test.fr',
       };
-      const newBillDash = new NewBill({
-        document,
-        onNavigate,
-        store,
-        localStorage: window.localStorage,
-      });
-      const billTest = {
-        id: "10000",
-        status: "pending",
-        pct: 30,
-        amount: 500,
-        email: "dragovic.mathias@gmail.com",
-        name: "Le remois",
-        vat: "15",
-        fileName: "test.jpg",
-        date: "2022-09-10",
-        commentary: "postMockNewBill",
-        type: "Restaurants et bars",
-        fileUrl: "https://test.jpg",
-      };
+      const getBills = jest.spyOn(storePost, "get");
+      const data = await storePost.get();
 
-      const handleSubmit = jest.fn(newBillDash.handleSubmit);
-      const formNewBills = screen.getByTestId('form-new-bill')
-			formNewBills.addEventListener('submit', handleSubmit)
-			fireEvent.submit(formNewBills)
-			expect(handleSubmit).toHaveBeenCalled()
-    })
+      const getAddedBill = jest.spyOn(storePost, "post");
+      const dataBills = await storePost.post(data, addPostBill);
+
+      expect(getBills).toHaveBeenCalledTimes(1);
+      expect(getAddedBill).toHaveBeenCalledTimes(1);
+      expect(dataBills.data.length).toBe(5);
+    });
    describe("When an error occurs on API", () => {
     //Set the test
     beforeEach(() => {
